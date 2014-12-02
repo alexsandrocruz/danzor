@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="DanzorDeserializer.cs" />
     <Compile Include="DanzorDynamicXml.cs" />
+    <Compile Include="Extensions\XElementExtension.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

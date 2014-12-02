@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace Danzor
 {
@@ -12,8 +9,8 @@ namespace Danzor
         {
             try
             {
-                dynamic nfeProc = new NFeDynamicXml(path);
-                return nfeProc.NFe;
+                dynamic result = new DanzorDynamicXml(path);
+                return result.NFe;
             }
             catch (Exception ex)
             {
@@ -25,8 +22,8 @@ namespace Danzor
         {
             try
             {
-                dynamic nfeProc = new NFeDynamicXml(path);
-                return nfeProc.protNFe;
+                dynamic result = new DanzorDynamicXml(path);
+                return result.protNFe;
             }
             catch (Exception ex)
             {
