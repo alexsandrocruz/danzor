@@ -25,17 +25,15 @@ namespace Danzor
             }
         }
 
-
         public DanzorDynamicXml(string filename)
         {
             this.Element = XElement.Load(filename);
         }
 
-        private DanzorDynamicXml(XElement el)
+        public DanzorDynamicXml(XElement el)
         {
             this.Element = el;
         }
-
 
         public double ToDouble()
         {
@@ -49,23 +47,24 @@ namespace Danzor
 
         public override bool TryGetMember(GetMemberBinder binder, out object result)
         {
-            var nodes = GetElements(binder.Name);
+            result = PrepareGetMembeResult(binder, GetElements(binder.Name));
+            return true;
+        }
 
-            if (!nodes.IsEmpty() && nodes.Count() == 1 && binder.Name != "det")
-            {
-                result = new DanzorDynamicXml(nodes.First());
-                return true;
-            }
-            else if (!nodes.IsEmpty() && nodes.Count() > 1 || binder.Name == "det")
-            {
-                result = nodes.Select(n => new DanzorDynamicXml(n)).ToList();
-                return true;
-            }
-            else
-            {
+        private object PrepareGetMembeResult(GetMemberBinder binder, IEnumerable<XElement> nodes)
+        {
+            object result;
+
+            if (nodes.IsEmpty())
                 result = null;
-                return true;
-            }
+
+            else if (binder.Name == "det")
+                result = nodes.Select(n => new DanzorDynamicXml(n)).ToList();
+
+            else
+                result = new DanzorDynamicXml(nodes.First());
+
+            return result;
         }
 
         private IEnumerable<XElement> GetElements(string name)

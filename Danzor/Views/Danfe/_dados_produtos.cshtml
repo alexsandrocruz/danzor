@@ -1,0 +1,105 @@
+﻿@model Danzor.DanzorViewModel
+<section class="bloco">
+   <div class="conteudo negrito fonte-7-pontos">DADOS DOS PRODUTOS / SERVIÇOS</div>
+   <table id="dados_produtos">
+      <tr>
+         <td class="campo">
+            <div class="conteudo fonte-5-pontos">CÓDIGO</div>
+         </td>
+         <td class="campo">
+            <div class="conteudo fonte-5-pontos">DESCRIÇÃO DOS PRODUTOS / SERVIÇOS</div>
+         </td>
+         <td class="campo">
+            <div class="conteudo fonte-5-pontos">NCM/SH</div>
+         </td>
+         <td class="campo">
+            <div class="conteudo fonte-5-pontos">CST</div>
+         </td>
+         <td class="campo">
+            <div class="conteudo fonte-5-pontos">CFOP</div>
+         </td>
+         <td class="campo">
+            <div class="conteudo fonte-5-pontos">UNID</div>
+         </td>
+         <td class="campo">
+            <div class="conteudo fonte-5-pontos">QUANT</div>
+         </td>
+         <td class="campo">
+            <div class="conteudo fonte-5-pontos">VLR.UNIT.</div>
+         </td>
+         <td class="campo">
+            <div class="conteudo fonte-5-pontos">VLR.TOTAL</div>
+         </td>
+         <td class="campo">
+            <div class="conteudo fonte-5-pontos">BC.ICMS</div>
+         </td>
+         <td class="campo">
+            <div class="conteudo fonte-5-pontos">VL.ICMS</div>
+         </td>
+         <td class="campo">
+            <div class="conteudo fonte-5-pontos">VLR I.P.I</div>
+         </td>
+         <td class="campo">
+            <div class="conteudo fonte-5-pontos">
+               Aliq
+               ICMS
+            </div>
+         </td>
+         <td class="campo">
+            <div class="conteudo fonte-5-pontos">
+               Aliq
+               IPI
+            </div>
+         </td>
+      </tr>
+      @for (int i = 0; i < 10; i++)
+      {
+         <tr>
+            <td class="campo sem-borda-superior-inferior">
+               <div class="conteudo fonte-7-pontos">10</div>
+            </td>
+            <td class="campo sem-borda-superior-inferior">
+               <div class="conteudo fonte-7-pontos">Produto teste</div>
+            </td>
+            <td class="campo sem-borda-superior-inferior">
+               <div class="conteudo fonte-7-pontos">16023100</div>
+            </td>
+            <td class="campo sem-borda-superior-inferior">
+               <div class="conteudo fonte-7-pontos">000</div>
+            </td>
+            <td class="campo sem-borda-superior-inferior">
+               <div class="conteudo fonte-7-pontos">5102</div>
+            </td>
+            <td class="campo sem-borda-superior-inferior">
+               <div class="conteudo fonte-7-pontos">CX</div>
+            </td>
+            <td class="campo sem-borda-superior-inferior">
+               <div class="conteudo fonte-7-pontos">1.0000</div>
+            </td>
+            <td class="campo sem-borda-superior-inferior">
+               <div class="conteudo fonte-7-pontos">80.32000</div>
+            </td>
+            <td class="campo sem-borda-superior-inferior">
+               <div class="conteudo fonte-7-pontos">80,32</div>
+            </td>
+            <td class="campo sem-borda-superior-inferior">
+               <div class="conteudo fonte-7-pontos">80,32</div>
+            </td>
+            <td class="campo sem-borda-superior-inferior">
+               <div class="conteudo fonte-7-pontos">13,65</div>
+            </td>
+            <td class="campo sem-borda-superior-inferior">
+               <div class="conteudo fonte-7-pontos">0</div>
+            </td>
+            <td class="campo sem-borda-superior-inferior">
+               <div class="conteudo fonte-7-pontos">17.00</div>
+            </td>
+            <td class="campo sem-borda-superior-inferior">
+               <div class="conteudo fonte-7-pontos">0</div>
+            </td>
+         </tr>
+
+      }
+   </table>
+
+</section>

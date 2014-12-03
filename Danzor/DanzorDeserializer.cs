@@ -18,11 +18,37 @@ namespace Danzor
             }
         }
 
+        public dynamic NFe(XElement element)
+        {
+            try
+            {
+                dynamic result = new DanzorDynamicXml(element);
+                return result.NFe;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        
         public dynamic ProtNFe(string path)
         {
             try
             {
                 dynamic result = new DanzorDynamicXml(path);
+                return result.protNFe;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public dynamic ProtNFe(XElement element)
+        {
+            try
+            {
+                dynamic result = new DanzorDynamicXml(element);
                 return result.protNFe;
             }
             catch (Exception ex)

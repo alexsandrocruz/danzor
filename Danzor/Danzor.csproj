@@ -41,8 +41,150 @@
   <ItemGroup>
     <Compile Include="DanzorDeserializer.cs" />
     <Compile Include="DanzorDynamicXml.cs" />
+    <Compile Include="DanzorViewModel.cs" />
     <Compile Include="Extensions\XElementExtension.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\css\danfe\danfe.css">
+      <DependentUpon>danfe.less</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\css\danfe\danfe.dimensoes.css">
+      <DependentUpon>danfe.dimensoes.less</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\css\danfe\danfe.dimensoes.min.css">
+      <DependentUpon>danfe.dimensoes.css</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\css\danfe\danfe.elementos.css">
+      <DependentUpon>danfe.elementos.less</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\css\danfe\danfe.elementos.min.css">
+      <DependentUpon>danfe.elementos.css</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\css\danfe\danfe.fontes.css">
+      <DependentUpon>danfe.fontes.less</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\css\danfe\danfe.fontes.min.css">
+      <DependentUpon>danfe.fontes.css</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\css\danfe\danfe.min.css">
+      <DependentUpon>danfe.css</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\css\danfe\danfe.pagina.css">
+      <DependentUpon>danfe.pagina.less</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\css\danfe\danfe.pagina.min.css">
+      <DependentUpon>danfe.pagina.css</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\css\danfe\danfe.table.css">
+      <DependentUpon>danfe.table.less</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\css\danfe\danfe.table.min.css">
+      <DependentUpon>danfe.table.css</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Danfe\_canhoto.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Danfe\_dados_adicionais.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Danfe\_dados_nfe.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Danfe\_dados_produtos.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Danfe\_destinatario.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Danfe\_faturas.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Danfe\_imposto.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Danfe\_transportador.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Danfe\Danfe.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\css\danfe\danfe.dimensoes.less">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\css\danfe\danfe.dimensoes.css.map">
+      <DependentUpon>danfe.dimensoes.css</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\css\danfe\danfe.elementos.css.map">
+      <DependentUpon>danfe.elementos.css</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\css\danfe\danfe.css.map">
+      <DependentUpon>danfe.css</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Content\css\danfe\danfe.elementos.less">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="Content\css\danfe\danfe.fontes.less">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\css\danfe\danfe.fontes.css.map">
+      <DependentUpon>danfe.fontes.css</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\css\danfe\danfe.less">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\css\danfe\danfe.pagina.css.map">
+      <DependentUpon>danfe.pagina.css</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Content\css\danfe\danfe.pagina.less">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="Content\css\danfe\danfe.table.less">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\css\danfe\danfe.table.css.map">
+      <DependentUpon>danfe.table.css</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

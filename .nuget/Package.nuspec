@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Danzor</id>
+    <version>1.0</version>
+    <authors>YCodeTeam</authors>
+    <owners>Yan de Lima Justino</owners>
+    <licenseUrl>https://github.com/ycodeteam/danzor</licenseUrl>
+    <projectUrl>https://github.com/ycodeteam/danzor</projectUrl>
+    <iconUrl>https://github.com/ycodeteam/danzor</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Danzor</description>
+    <tags>NFe DANFe XML</tags>
+  </metadata>
+</package>
