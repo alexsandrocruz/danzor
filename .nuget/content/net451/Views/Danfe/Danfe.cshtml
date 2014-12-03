@@ -1,0 +1,27 @@
+﻿@model Danzor.DanzorViewModel
+
+@{
+   Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+   <meta name="viewport" content="width=device-width" />
+   <title>DANFe</title>
+   <link href="~/Content/css/danfe/danfe.css" rel="stylesheet" />
+</head>
+<body>
+   <div class="danfe">
+      @Html.Partial("_canhoto", @Model)
+      @Html.Partial("_dados_nfe", @Model)
+      @Html.Partial("_destinatario", @Model)
+      @Html.Partial("_transportador", @Model)
+      @Html.Partial("_imposto", @Model)
+      @Html.Partial("_faturas", @Model)
+      @Html.Partial("_dados_produtos", @Model)
+      @Html.Partial("_dados_adicionais", @Model)
+   </div>
+</body>
+</html>
