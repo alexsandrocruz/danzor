@@ -19,9 +19,12 @@
       {
          @Html.Partial("~/Views/Danfe/_dados_nfe.cshtml", @page)
          @Html.Partial("~/Views/Danfe/_destinatario.cshtml", @page)
-         @Html.Partial("~/Views/Danfe/_transportador.cshtml", @page)
-         @Html.Partial("~/Views/Danfe/_imposto.cshtml", @page)
-         @Html.Partial("~/Views/Danfe/_faturas.cshtml", @page)
+         if (@page.page.Equals(1))
+         {
+            @Html.Partial("~/Views/Danfe/_transportador.cshtml", @page)
+            @Html.Partial("~/Views/Danfe/_imposto.cshtml", @page)
+            @Html.Partial("~/Views/Danfe/_faturas.cshtml", @page)
+         }
          @Html.Partial("~/Views/Danfe/_dados_produtos.cshtml", @page)
       }
       @Html.Partial("~/Views/Danfe/_dados_adicionais.cshtml", @Model.Footer)

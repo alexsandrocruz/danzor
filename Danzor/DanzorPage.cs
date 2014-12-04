@@ -29,10 +29,10 @@ namespace Danzor
             this.nfe = nfe;
             this.ide = this.nfe.infNFe.ide;
             this.emit = this.nfe.infNFe.emit;
-            this.dest = page.Equals(1) ? this.nfe.infNFe.dest : null;
-            this.total = page.Equals(1) ? this.nfe.infNFe.total : null;
-            this.transp = page.Equals(1) ? this.nfe.infNFe.transp : null;
-            this.cobr = page.Equals(1) ? this.nfe.infNFe.cobr : null;
+            this.dest = this.nfe.infNFe.dest;
+            this.total = this.nfe.infNFe.total;
+            this.transp = this.nfe.infNFe.transp;
+            this.cobr = this.nfe.infNFe.cobr;
             this.protNFe = protNFe;
 
             this.det = ((List<DanzorDynamicXml>)this.nfe.infNFe.det).Skip(page - 1).Take(10);
