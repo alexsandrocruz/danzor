@@ -1,4 +1,5 @@
-﻿@model Set.Web.Api.Host.Models.NFeViewModel
+﻿@model Danzor.DanzorPage
+
 <section class="bloco">
    <div class="conteudo negrito fonte-7-pontos">TRANSPORTADOR / VOLUMES TRANSPORTADOS</div>
    <table>
@@ -16,7 +17,7 @@
             </div>
             <div class="conteudo duas-coluna centralizado negrito">
                <span class="caixa">
-                  @Model.NFe.infNFe.transp.modFrete.Value
+                  @Model.transp.modFrete.Value
                </span>
             </div>
          </td>
@@ -66,13 +67,13 @@
          <td class="campo especie-transportador">
             <div class="conteudo fonte-5-pontos">ESPÉCIE</div>
             <div class="conteudo">
-               @Model.NFe.infNFe.transp.vol.esp.Value
+               @Model.transp.vol.esp.Value
             </div>
          </td>
          <td class="campo marca-transportador">
             <div class="conteudo fonte-5-pontos">MARCA</div>
             <div class="conteudo">
-               @Model.NFe.infNFe.transp.vol.marca.Value
+               @Model.transp.vol.marca.Value
             </div>
          </td>
          <td class="campo numero-transportador">
@@ -84,13 +85,13 @@
          <td class="campo peso-bruto-transportador">
             <div class="conteudo fonte-5-pontos">PESO BRUTO</div>
             <div class="conteudo">
-               @Model.NFe.infNFe.transp.vol.pesoB.Value
+               @Model.transp.vol.pesoB.Value
             </div>
          </td>
          <td class="campo peso-liquido-transportador">
             <div class="conteudo fonte-5-pontos">PESO LÍQUIDO</div>
             <div class="conteudo">
-               @Model.NFe.infNFe.transp.vol.pesoL.Value
+               @Model.transp.vol.pesoL.Value
             </div>
          </td>
       </tr>

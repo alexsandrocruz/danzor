@@ -52,8 +52,9 @@ namespace Danzor.Tests
         {
             Assert.IsNotNull(nfe.infNFe.emit);
             Assert.IsNotNull(nfe.infNFe.emit.enderEmit);
-            Assert.IsNull(nfe.infNFe.emit.CPF);
+            Assert.IsNotNull(nfe.infNFe.emit.CPF);
 
+            Assert.AreEqual(string.Empty, nfe.infNFe.emit.CPF.Value);
             Assert.AreEqual("08060730000190", nfe.infNFe.emit.CNPJ.Value);
             Assert.AreEqual("FLEXLUX - PRODUTOS CERAMICOS LTDA. - EPP", nfe.infNFe.emit.xNome.Value);
             Assert.AreEqual("FLEXLUX", nfe.infNFe.emit.xFant.Value);
@@ -65,8 +66,9 @@ namespace Danzor.Tests
         {
             Assert.IsNotNull(nfe.infNFe.emit);
             Assert.IsNotNull(nfe.infNFe.emit.enderEmit);
-            Assert.IsNull(nfe.infNFe.emit.CPF);
+            Assert.IsNotNull(nfe.infNFe.emit.CPF);
 
+            Assert.AreEqual(string.Empty, nfe.infNFe.emit.CPF.Value);
             Assert.AreEqual("AV F, QUADRA 16, LOTES 06 E 07,", nfe.infNFe.emit.enderEmit.xLgr.Value);
             Assert.AreEqual("S/N", nfe.infNFe.emit.enderEmit.nro.Value);
             Assert.AreEqual("DIS IND SOCORRO", nfe.infNFe.emit.enderEmit.xBairro.Value);

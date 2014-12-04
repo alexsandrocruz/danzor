@@ -1,4 +1,5 @@
-﻿@model Set.Web.Api.Host.Models.NFeViewModel
+﻿@model Danzor.DanzorPage
+
 <section class="bloco">
    <div class="conteudo negrito fonte-7-pontos">DADOS DOS PRODUTOS / SERVIÇOS</div>
    <table id="dados_produtos">
@@ -55,7 +56,7 @@
          </tr>
       </thead>
 
-      @for (int i = 0; i < 30; i++)
+      @*@for (int i = 0; i < 30; i++)
       {
          <tr>
             <td class="campo sem-borda-superior-inferior">
@@ -130,9 +131,9 @@
             </td>
          </tr>
 
-      }
+      }*@
 
-      @*@foreach (var item in Model.NFe.infNFe.det)
+      @foreach (var item in Model.det)
       {
          <tr>
             <td class="campo sem-borda-superior-inferior">
@@ -194,7 +195,7 @@
                <div class="conteudo fonte-7-pontos">
                   @if (item.imposto.IPI.IPITrib != null)
                   {
-                     @item.imposto.IPI.IPITrib.vIPI
+                     @item.imposto.IPI.IPITrib.vIPI.Value
                   }
                   else
                   {
@@ -211,7 +212,7 @@
                <div class="conteudo fonte-7-pontos">
                   @if (item.imposto.IPI.IPITrib != null)
                   {
-                     @item.imposto.IPI.IPITrib.pIPI
+                     @item.imposto.IPI.IPITrib.pIPI.Value
                   }
                   else
                   {
@@ -221,7 +222,7 @@
             </td>
          </tr>
 
-      }*@
+      }
    </table>
 
 </section>

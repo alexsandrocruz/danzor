@@ -14,8 +14,7 @@ namespace Danzor.Tests.Helper
         {
             get
             {
-                var deserializer = new DanzorDeserializer();
-                return deserializer.NFe(GetFilePath());
+                return new DanzorPrintViewer(GetFilePath()).Pages.First().nfe;
             }
         }
 

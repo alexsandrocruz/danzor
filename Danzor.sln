@@ -15,6 +15,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{AF9699
 		.nuget\Package.nuspec = .nuget\Package.nuspec
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Danzor.Mvc", "Danzor.Mvc\Danzor.Mvc.csproj", "{FE1A1E5F-606F-411C-9941-2FFC7D092993}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{BCD3634E-127B-46A3-BFE8-E48686BBA88A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCD3634E-127B-46A3-BFE8-E48686BBA88A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCD3634E-127B-46A3-BFE8-E48686BBA88A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE1A1E5F-606F-411C-9941-2FFC7D092993}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE1A1E5F-606F-411C-9941-2FFC7D092993}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE1A1E5F-606F-411C-9941-2FFC7D092993}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE1A1E5F-606F-411C-9941-2FFC7D092993}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

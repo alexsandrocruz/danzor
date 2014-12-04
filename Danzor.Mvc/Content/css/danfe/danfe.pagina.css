@@ -1,0 +1,20 @@
+﻿body {
+  display: flex;
+  justify-content: center;
+}
+.danfe {
+  width: 210mm;
+  padding: 0.2cm;
+}
+@page {
+  size: A4;
+  margin: 0;
+}
+@media print {
+  html,
+  body {
+    width: 210mm;
+    height: 297mm;
+  }
+}
+/*# sourceMappingURL=danfe.pagina.css.map */

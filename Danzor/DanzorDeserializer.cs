@@ -1,16 +1,21 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Xml.Linq;
 
 namespace Danzor
 {
-    public class DanzorDeserializer
+    internal class DanzorDeserializer
     {
-        public dynamic NFe(string path)
+        public dynamic nfe { get; private set; }
+        public dynamic protNFe { get; private set; }
+
+        public DanzorDeserializer(string path)
         {
             try
             {
                 dynamic result = new DanzorDynamicXml(path);
-                return result.NFe;
+                this.nfe = result.NFe;
+                this.protNFe = result.protNFe;
             }
             catch (Exception ex)
             {
@@ -18,38 +23,13 @@ namespace Danzor
             }
         }
 
-        public dynamic NFe(XElement element)
+        public DanzorDeserializer(XElement element)
         {
             try
             {
                 dynamic result = new DanzorDynamicXml(element);
-                return result.NFe;
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
-        
-        public dynamic ProtNFe(string path)
-        {
-            try
-            {
-                dynamic result = new DanzorDynamicXml(path);
-                return result.protNFe;
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
-
-        public dynamic ProtNFe(XElement element)
-        {
-            try
-            {
-                dynamic result = new DanzorDynamicXml(element);
-                return result.protNFe;
+                this.nfe = result.NFe;
+                this.protNFe = result.protNFe;
             }
             catch (Exception ex)
             {

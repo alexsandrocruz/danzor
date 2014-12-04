@@ -1,4 +1,5 @@
-﻿@model Set.Web.Api.Host.Models.NFeViewModel
+﻿@model Danzor.DanzorPage
+
 <section class="bloco">
    <div class="conteudo negrito fonte-7-pontos">FATURAS</div>
    <table class="sem-bordas-laterais">
@@ -6,7 +7,7 @@
          <td>
             <table class="sem-bordas">
                <tr>
-                  @foreach (var duplicata in @Model.NFe.infNFe.cobr.dup)
+                  @foreach (var duplicata in @Model.cobr.dup)
                   {
                      <td class="campo sem-bordas">
                         <div class="conteudo tres-colunas">

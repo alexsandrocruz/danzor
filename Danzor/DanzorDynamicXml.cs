@@ -25,15 +25,23 @@ namespace Danzor
             }
         }
 
-        public DanzorDynamicXml(string filename)
+        public DanzorDynamicXml()
         {
-            this.Element = XElement.Load(filename);
+            this.Element = null;
         }
 
         public DanzorDynamicXml(XElement el)
         {
             this.Element = el;
         }
+
+        public DanzorDynamicXml(string filename)
+        {
+            this.Element = XElement.Load(filename);
+        }
+
+
+        #region METHODS
 
         public double ToDouble()
         {
@@ -45,6 +53,14 @@ namespace Danzor
             return this.Element.ToDateTime();
         }
 
+        public DanzorDynamicXml First()
+        {
+            var node = this.Element.Elements().First();
+
+            if (node == null) return null;
+            else return new DanzorDynamicXml(node);
+        }
+
         public override bool TryGetMember(GetMemberBinder binder, out object result)
         {
             result = PrepareGetMembeResult(binder, GetElements(binder.Name));
@@ -53,14 +69,13 @@ namespace Danzor
 
         private object PrepareGetMembeResult(GetMemberBinder binder, IEnumerable<XElement> nodes)
         {
+            var collections = new string[] { "det", "dup" };
             object result;
 
             if (nodes.IsEmpty())
-                result = null;
-
-            else if (binder.Name == "det")
+                result = new DanzorDynamicXml();
+            else if (collections.Contains(binder.Name))
                 result = nodes.Select(n => new DanzorDynamicXml(n)).ToList();
-
             else
                 result = new DanzorDynamicXml(nodes.First());
 
@@ -74,5 +89,7 @@ namespace Danzor
             XNamespace xnameSpace = "http://www.portalfiscal.inf.br/nfe";
             return this.Element.Elements(xnameSpace + name);
         }
+
+        #endregion
     }
 }

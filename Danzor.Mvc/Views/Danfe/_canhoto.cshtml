@@ -1,14 +1,15 @@
-﻿@model Set.Web.Api.Host.Models.NFeViewModel
+﻿@model Danzor.DanzorHeader
+
 <section class="bloco">
    <table id="canhoto">
       <tr>
          <td class="campo recebemos" colspan="2">
-            <div class="conteudo fonte-5-pontos">RECEBEMOS @Model.NFe.infNFe.emit.xNome.Value OS PRODUTOS CONSTANTES DA NOTA FISCAL INDICADA AO LADO</div>
+            <div class="conteudo fonte-5-pontos">RECEBEMOS @Model.emit.xNome.Value OS PRODUTOS CONSTANTES DA NOTA FISCAL INDICADA AO LADO</div>
          </td>
          <td class="campo numero-nfe" rowspan="2">
             <div class="conteudo centralizado negrito">NF-e</div>
-            <div class="conteudo negrito">Nr: @Model.NFe.infNFe.ide.cNF.Value</div>
-            <div class="conteudo negrito">Série: @Model.NFe.infNFe.ide.serie.Value</div>
+            <div class="conteudo negrito">Nr: @Model.ide.cNF.Value</div>
+            <div class="conteudo negrito">Série: @Model.ide.serie.Value</div>
          </td>
       </tr>
       <tr>

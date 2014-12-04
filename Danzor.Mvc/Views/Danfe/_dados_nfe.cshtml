@@ -1,18 +1,19 @@
-﻿@model Set.Web.Api.Host.Models.NFeViewModel
+﻿@model Danzor.DanzorPage
+
 <section class="bloco">
    <table id="dados-nfe">
       <thead>
          <tr>
             <td rowspan="4" class="campo quadro-identificacao-emitente">
                <div class="conteudo negrito">
-                  <h3>@Model.NFe.infNFe.emit.xNome.Value</h3>
+                  <h3>@Model.emit.xNome.Value</h3>
                </div>
                <div class="conteudo">
-                  @Model.NFe.infNFe.emit.enderEmit.xLgr.Value, @Model.NFe.infNFe.emit.enderEmit.nro.Value <br />
-                  @Model.NFe.infNFe.emit.enderEmit.xBairro.Value <br />
-                  @Model.NFe.infNFe.emit.enderEmit.xMun.Value - @Model.NFe.infNFe.emit.enderEmit.UF.Value <br />
-                  @Model.NFe.infNFe.emit.enderEmit.CEP.Value <br />
-                  Tel: @Model.NFe.infNFe.emit.enderEmit.fone.Value
+                  @Model.emit.enderEmit.xLgr.Value, @Model.emit.enderEmit.nro.Value <br />
+                  @Model.emit.enderEmit.xBairro.Value <br />
+                  @Model.emit.enderEmit.xMun.Value - @Model.emit.enderEmit.UF.Value <br />
+                  @Model.emit.enderEmit.CEP.Value <br />
+                  Tel: @Model.emit.enderEmit.fone.Value
                </div>
             </td>
             <td rowspan="4" class="campo quadro-descricao-danfe">
@@ -28,12 +29,12 @@
                      1 - SAÍDA
                   </div>
                   <div class="conteudo duas-coluna centralizado negrito">
-                     <span class="caixa">@Model.NFe.infNFe.ide.tpEmis.Value</span>
+                     <span class="caixa">@Model.ide.tpEmis.Value</span>
                   </div>
                </div>
                <div class="conteudo negrito fonte-7-pontos">
-                  Nr: @Model.NFe.infNFe.ide.cNF.Value <br />
-                  Série: @Model.NFe.infNFe.ide.serie.Value <br />
+                  Nr: @Model.ide.cNF.Value <br />
+                  Série: @Model.ide.serie.Value <br />
                   Folha: 1/2 <br />
                </div>
             </td>
@@ -49,7 +50,7 @@
                   CHAVE DE ACESSO DA NF-e
                </div>
                <div class="conteudo negrito">
-                  @Model.ProtNFe.infProt.chNFe.Value
+                  @Model.protNFe.infProt.chNFe.Value
                </div>
                <div class="conteudo centralizado fonte-7-pontos">
                   Consulta de autenticidade no portal nacional da NF-e www.nfe.fazenda.gov.br/portal ou
@@ -61,8 +62,8 @@
             <td class="campo codigo-de-barras-da-chave">
                <div class="conteudo fonte-5-pontos">PROTOCOLO DE AUTORIZAÇÃO DE USO</div>
                <div class="conteudo">
-                  @Model.ProtNFe.infProt.nProt.Value
-                  @Model.ProtNFe.infProt.dhRecbto.ToDateTime().ToString()
+                  @Model.protNFe.infProt.nProt.Value
+                  @Model.protNFe.infProt.dhRecbto.ToDateTime().ToString()
                </div>
             </td>
          </tr>
@@ -74,20 +75,20 @@
          <tr>
             <td colspan="3" class="campo natureza-de-operacao">
                <div class="conteudo fonte-5-pontos">NATUREZA DA OPERAÇÃO</div>
-               <div class="conteudo">@Model.NFe.infNFe.ide.natOp.Value</div>
+               <div class="conteudo">@Model.ide.natOp.Value</div>
             </td>
          </tr>
          <tr>
             <td class="campo inscricao-estadual-emitente">
                <div class="conteudo fonte-5-pontos">INSCRIÇÃO ESTADUAL</div>
-               <div class="conteudo">@Model.NFe.infNFe.emit.IE.Value</div>
+               <div class="conteudo">@Model.emit.IE.Value</div>
             </td>
             <td class="campo inscricao-estadual-st-emitente">
                <div class="conteudo fonte-5-pontos">INSCR.ESTADUAL SUBSTITUTO</div>
             </td>
             <td class="campo cnpj-emitente">
                <div class="conteudo fonte-5-pontos">CNPJ</div>
-               <div class="conteudo">@Model.NFe.infNFe.emit.CNPJ.Value</div>
+               <div class="conteudo">@Model.emit.CNPJ.Value</div>
             </td>
          </tr>
       </thead>
