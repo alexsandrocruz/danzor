@@ -35,7 +35,7 @@ namespace Danzor.Print
             this.cobr = this.nfe.infNFe.cobr;
             this.protNFe = protNFe;
 
-            this.det = ((List<object>)this.nfe.infNFe.det).Skip(page - 1).Take(10);
+            this.det = ((List<DanzorDynamicXml>)this.nfe.infNFe.det).Skip(page - 1).Take(10);
         }
     }
 }

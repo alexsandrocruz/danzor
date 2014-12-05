@@ -14,7 +14,7 @@ namespace Danzor.Print
 
         public DanzorPrintManager(string path)
         {
-            this.nfe = DanzorSerializer.GetExpandoFromXml(path);
+            this.nfe = DanzorSerializer.DeserializerNFe(path);
             this.protNFe = DanzorSerializer.DeserializerProtNFe(path);
         }
 
@@ -40,7 +40,5 @@ namespace Danzor.Print
         {
             return this.nfe.infNFe.det.Count / 10;
         }
-
-
     }
 }
