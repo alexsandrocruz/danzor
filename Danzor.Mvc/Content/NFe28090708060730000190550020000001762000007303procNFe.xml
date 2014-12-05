@@ -1,0 +1,31 @@
+﻿<nfeProc xmlns="http://www.portalfiscal.inf.br/nfe" versao="1.10"><NFe xmlns="http://www.portalfiscal.inf.br/nfe"><infNFe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Id="NFe28090708060730000190550020000001762000007303" versao="1.10"><ide><cUF>28</cUF><cNF>200000730</cNF><natOp>VENDA DE MERCADORIA ADQUIRIDA</natOp><indPag>0</indPag><mod>55</mod><serie>2</serie><nNF>176</nNF><dEmi>2009-07-01</dEmi><tpNF>1</tpNF><cMunFG>2804805</cMunFG><tpImp>1</tpImp><tpEmis>1</tpEmis><cDV>3</cDV><tpAmb>1</tpAmb><finNFe>1</finNFe><procEmi>3</procEmi><verProc>1.3.2</verProc></ide><emit><CNPJ>08060730000190</CNPJ><xNome>FLEXLUX - PRODUTOS CERAMICOS LTDA. - EPP</xNome><xFant>FLEXLUX</xFant><enderEmit><xLgr>AV F, QUADRA 16, LOTES 06 E 07,</xLgr><nro>S/N</nro><xBairro>DIS IND SOCORRO</xBairro><cMun>2804805</cMun><xMun>Nossa Senhora do Socorro</xMun><UF>SE</UF><CEP>49160000</CEP><cPais>1058</cPais><xPais>BRASIL</xPais><fone>7932568192</fone></enderEmit><IE>271190191</IE></emit><dest><CNPJ>01070694000104</CNPJ><xNome>ARMIL MINERACAO DO NORDESTE LTDA</xNome><enderDest><xLgr>RODOVIA RN 227</xLgr><nro>KM 05</nro><xBairro>NAO INFORMADO</xBairro><cMun>2408904</cMun><xMun>Parelhas</xMun><UF>RN</UF><CEP>59360000</CEP><cPais>1058</cPais><xPais>BRASIL</xPais><fone>8434713021</fone></enderDest><IE>200749102</IE></dest><det nItem="1"><prod><cProd>SUCATAS MADEIRA</cProd><cEAN /><xProd>SUCATAS DE MADEIRA</xProd><NCM>72041000</NCM><EXTIPI>00</EXTIPI><genero>72</genero><CFOP>6102</CFOP><uCom>KG</uCom><qCom>350.0000</qCom><vUnCom>5.0000</vUnCom><vProd>1750.00</vProd><cEANTrib /><uTrib>UN</uTrib><qTrib>350.0000</qTrib><vUnTrib>5.0000</vUnTrib></prod><imposto><ICMS><ICMS00><orig>0</orig><CST>00</CST><modBC>3</modBC><vBC>1750.00</vBC><pICMS>12.00</pICMS><vICMS>210.00</vICMS></ICMS00></ICMS><IPI><clEnq>?</clEnq><cSelo>?</cSelo><cEnq>999</cEnq><IPINT><CST>52</CST></IPINT></IPI><PIS><PISAliq><CST>01</CST><vBC>1750.00</vBC><pPIS>1.65</pPIS><vPIS>28.88</vPIS></PISAliq></PIS><COFINS><COFINSAliq><CST>01</CST><vBC>1750.00</vBC><pCOFINS>7.60</pCOFINS><vCOFINS>133.00</vCOFINS></COFINSAliq></COFINS></imposto><infAdProd>?</infAdProd></det><total><ICMSTot><vBC>1750.00</vBC><vICMS>210.00</vICMS><vBCST>0.00</vBCST><vST>0.00</vST><vProd>1750.00</vProd><vFrete>0.00</vFrete><vSeg>0.00</vSeg><vDesc>0.00</vDesc><vII>0.00</vII><vIPI>0.00</vIPI><vPIS>28.88</vPIS><vCOFINS>133.00</vCOFINS><vOutro>0.00</vOutro><vNF>1750.00</vNF></ICMSTot></total><transp><modFrete>0</modFrete><vol><esp>?</esp><marca>?</marca><nVol>?</nVol><pesoL>5950.000</pesoL><pesoB>5950.000</pesoB></vol></transp><cobr><dup><nDup>0000176/01</nDup><dVenc>2009-07-01</dVenc><vDup>1750.00</vDup></dup></cobr><infAdic><infAdFisco>?</infAdFisco><infCpl>DEPOSITO EM CONTA CORRENTE No 5241-8 AG 3422-3 BANCO DO BRASIL</infCpl></infAdic></infNFe><Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI="#NFe28090708060730000190550020000001762000007303"><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>ZRPurVp46D2vl7a+U5byjsxTKFM=</DigestValue></Reference></SignedInfo><SignatureValue>gB3nMnBHedZBB7gBD1ZG24tsHeOrtCHLeR5RkEeAZpvd0lLyUnk+EhfS9tLnAfyXOVm7cIgq8qGH
+jy8Ro3shXtgz8jlZn22FKzpPyLO9RDXC8kdSrXzKnTmF+bHl4Q9PVI1jnPsMCWfUYT3aThy1qdcS
+yypSNB3KQtc6QqU9IO0=</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIGOjCCBSKgAwIBAgIIfe0xzA6NRXMwDQYJKoZIhvcNAQEFBQAwTDELMAkGA1UEBhMCQlIxEzAR
+BgNVBAoTCklDUC1CcmFzaWwxKDAmBgNVBAMTH1NFUkFTQSBDZXJ0aWZpY2Fkb3JhIERpZ2l0YWwg
+djEwHhcNMDkwMzI1MTMwMDAwWhcNMTAwMzI1MTMwMDAwWjCB7jELMAkGA1UEBhMCQlIxEzARBgNV
+BAoTCklDUC1CcmFzaWwxFDASBgNVBAsTCyhFTSBCUkFOQ08pMRgwFgYDVQQLEw8wMDAwMDEwMDA1
+NTQ4MDAxFDASBgNVBAsTCyhFTSBCUkFOQ08pMRQwEgYDVQQLEwsoRU0gQlJBTkNPKTEUMBIGA1UE
+CxMLKEVNIEJSQU5DTykxFDASBgNVBAsTCyhFTSBCUkFOQ08pMRQwEgYDVQQLEwsoRU0gQlJBTkNP
+KTEsMCoGA1UEAxMjRkxFWExVWCBQUk9EVVRPUyBDRVJBTUlDT1MgTFREQSBFUFAwgZ8wDQYJKoZI
+hvcNAQEBBQADgY0AMIGJAoGBAMvIDz2uRuzs+kbSkUj6qVYqoUwTYeWvQMkjm8VXjRKAlMxVg/3l
+WL7fcw5XFjKZAk2Cs6pl7TeH5fX4SHXKRN+3RSYuQIqGfPPzFb2nFeaojzETuB+kWWe5xmKawE2k
+W2V7hVqMc8s1DnKGV5AI9XtX4svvzVVynCjdEBzYtfwrAgMBAAGjggL/MIIC+zAOBgNVHQ8BAf8E
+BAMCBeAwHQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMEMB8GA1UdIwQYMBaAFLdgqFv5sqau
+AO1069VKyZZoZvVcMIHCBgNVHREEgbowgbeBFUFSUEBDT0xPUk1JTkFTLkNPTS5CUqA9BgVgTAED
+BKA0EzIzMTAxMTk0OTIyNDQ1ODM4OTkxMDAwMDAwMDAwMDAwMDAwMDAwMDY3NTg0MDFTU1BTQ6Ar
+BgVgTAEDAqAiEyBBTkRSRVMgUkFJTVVORE8gRkVERVJJQ08gUEVTU0VSTKAZBgVgTAEDA6AQEw4w
+ODA2MDczMDAwMDE5MKAXBgVgTAEDB6AOEwwwMDAwMDAwMDAwMDAwVwYDVR0gBFAwTjBMBgZgTAEC
+AQYwQjBABggrBgEFBQcCARY0aHR0cDovL3d3dy5jZXJ0aWZpY2Fkb2RpZ2l0YWwuY29tLmJyL3Jl
+cG9zaXRvcmlvL2RwYzCB8AYDVR0fBIHoMIHlMEmgR6BFhkNodHRwOi8vd3d3LmNlcnRpZmljYWRv
+ZGlnaXRhbC5jb20uYnIvcmVwb3NpdG9yaW8vbGNyL3NlcmFzYWNkdjEuY3JsMEOgQaA/hj1odHRw
+Oi8vbGNyLmNlcnRpZmljYWRvcy5jb20uYnIvcmVwb3NpdG9yaW8vbGNyL3NlcmFzYWNkdjEuY3Js
+MFOgUaBPhk1odHRwOi8vcmVwb3NpdG9yaW8uaWNwYnJhc2lsLmdvdi5ici9sY3IvU2VyYXNhL3Jl
+cG9zaXRvcmlvL2xjci9zZXJhc2FjZHYxLmNybDCBlwYIKwYBBQUHAQEEgYowgYcwPAYIKwYBBQUH
+MAGGMGh0dHA6Ly9vY3NwLmNlcnRpZmljYWRvZGlnaXRhbC5jb20uYnIvc2VyYXNhY2R2MTBHBggr
+BgEFBQcwAoY7aHR0cDovL3d3dy5jZXJ0aWZpY2Fkb2RpZ2l0YWwuY29tLmJyL2NhZGVpYXMvc2Vy
+YXNhY2R2MS5wN2IwDQYJKoZIhvcNAQEFBQADggEBAFVg5bEOYJ/x7kRSqiu1tjw/+2erqZ2DwTrN
+46ixnkHkaySKhh5TeYT+4GE/X92x4wWo8BTJ/K88tIWKtYosIdZY2m4kh/uKsDk5FIL3WDacryI1
+UQxSKUHviFpq/9fWbl14MD8fIM0GBwJ5l9d0qgfFbWeL+cOSI6tDKUg65Ta7MQhpWjy3CtinwuJo
+bB16/SL58POqtFJdIkyzvd0464j73OAp19vxzEVIeqmR4pL0ZWo3sVklFwf88Zmj9tdYkDkUSKLj
+BTqqdpkAr5FYQqiF0x8Nnnam/sWuLzDCzdxsZU6Suf12ugqUAv5FhzcZzTxgtIO/4TsR6apEo8HB
+FpQ=</X509Certificate></X509Data></KeyInfo></Signature></NFe><protNFe versao="1.10" xmlns="http://www.portalfiscal.inf.br/nfe"><infProt Id="NFe328090001050001"><tpAmb>1</tpAmb><verAplic>SVRS20090506104128</verAplic><chNFe>28090708060730000190550020000001762000007303</chNFe><dhRecbto>2009-07-01T11:59:21</dhRecbto><nProt>328090001050001</nProt><digVal>ZRPurVp46D2vl7a+U5byjsxTKFM=</digVal><cStat>100</cStat><xMotivo>Autorizado o uso da NF-e</xMotivo></infProt></protNFe></nfeProc>

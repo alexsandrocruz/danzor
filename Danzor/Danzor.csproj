@@ -41,11 +41,12 @@
   <ItemGroup>
     <Compile Include="DanzorDeserializer.cs" />
     <Compile Include="DanzorDynamicXml.cs" />
-    <Compile Include="DanzorFooter.cs" />
-    <Compile Include="DanzorHeader.cs" />
-    <Compile Include="DanzorPage.cs" />
-    <Compile Include="DanzorPrintManager.cs" />
-    <Compile Include="DanzorPrintViewer.cs" />
+    <Compile Include="Print\DanzorBody.cs" />
+    <Compile Include="Print\DanzorFooter.cs" />
+    <Compile Include="Print\DanzorHeader.cs" />
+    <Compile Include="Print\DanzorPage.cs" />
+    <Compile Include="Print\DanzorPrintManager.cs" />
+    <Compile Include="Print\DanzorPrintViewer.cs" />
     <Compile Include="Extensions\DanzorDynamicXmlExtension.cs" />
     <Compile Include="Extensions\XElementExtension.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

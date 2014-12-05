@@ -9,6 +9,7 @@ namespace Danzor
         public dynamic nfe { get; private set; }
         public dynamic protNFe { get; private set; }
 
+
         public DanzorDeserializer(string path)
         {
             try

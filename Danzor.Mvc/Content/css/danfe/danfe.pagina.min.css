@@ -1,1 +1,1 @@
-﻿body{display:flex;justify-content:center}.danfe{width:210mm;padding:.2cm}@page{size:A4;margin:0}@media print{html,body{width:210mm;height:297mm}}
+﻿@page{size:A4;margin:0}@media all{body{display:flex;justify-content:center;background-color:gray}.page{margin-top:2mm;background-color:#fff;height:297mm;width:205mm;display:block;padding:2mm}}@media print{body{background-color:#fff}.page{background-color:#fff;height:auto;width:205mm;display:block;padding:2mm;page-break-after:always}.page:last-of-type{page-break-after:auto}}

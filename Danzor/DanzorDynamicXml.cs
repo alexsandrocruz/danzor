@@ -9,53 +9,53 @@ namespace Danzor
 {
     public class DanzorDynamicXml : DynamicObject
     {
-        private XElement Element { get; set; }
-        public string this[string attr]
-        {
-            get
-            {
-                return Element.IsNull() ? string.Empty : Element.Attribute(attr).Value;
-            }
-        }
+        private XElement element;
+
         public string Value
         {
             get
             {
-                return Element.IsNull() ? string.Empty : Element.Value;
+                return element.IsNull() ? string.Empty : element.Value;
+            }
+        }
+        public string this[string attr]
+        {
+            get
+            {
+                return element.IsNull() ? string.Empty : element.Attribute(attr).Value;
             }
         }
 
+
         public DanzorDynamicXml()
         {
-            this.Element = null;
-        }
-
-        public DanzorDynamicXml(XElement el)
-        {
-            this.Element = el;
+            this.element = null;
         }
 
         public DanzorDynamicXml(string filename)
         {
-            this.Element = XElement.Load(filename);
+            this.element = XElement.Load(filename);
+        }
+
+        public DanzorDynamicXml(XElement element)
+        {
+            this.element = element;
         }
 
 
-        #region METHODS
-
         public double ToDouble()
         {
-            return this.Element.ToDouble();
+            return this.element.ToDouble();
         }
 
         public DateTime? ToDateTime()
         {
-            return this.Element.ToDateTime();
+            return this.element.ToDateTime();
         }
 
         public DanzorDynamicXml First()
         {
-            var node = this.Element.Elements().First();
+            var node = this.element.Elements().First();
 
             if (node == null) return null;
             else return new DanzorDynamicXml(node);
@@ -84,12 +84,10 @@ namespace Danzor
 
         private IEnumerable<XElement> GetElements(string name)
         {
-            if (this.Element.IsNull()) return null;
+            if (this.element.IsNull()) return null;
 
             XNamespace xnameSpace = "http://www.portalfiscal.inf.br/nfe";
-            return this.Element.Elements(xnameSpace + name);
+            return this.element.Elements(xnameSpace + name);
         }
-
-        #endregion
     }
 }

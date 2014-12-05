@@ -1,4 +1,4 @@
-﻿@model Danzor.DanzorPage
+﻿@model Danzor.Print.DanzorBody
 
 <section class="bloco">
    <table id="dados-nfe">
@@ -35,7 +35,7 @@
                <div class="conteudo negrito fonte-7-pontos">
                   Nr: @Model.ide.cNF.Value <br />
                   Série: @Model.ide.serie.Value <br />
-                  Folha: 1/2 <br />
+                  Folha: @Model.page/@Model.size <br />
                </div>
             </td>
          </tr>

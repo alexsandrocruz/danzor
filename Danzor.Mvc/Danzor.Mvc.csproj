@@ -203,6 +203,7 @@
     </Content>
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Content\NFe28090708060730000190550020000001762000007303procNFe.xml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -246,7 +247,7 @@
       <DependentUpon>danfe.table.css</DependentUpon>
     </Content>
     <None Include="Project_Readme.html" />
-    <Content Include="Views\Danfe\Danfe.cshtml" />
+    <Content Include="Views\Danfe\danfe.cshtml" />
     <Content Include="Views\Danfe\_canhoto.cshtml" />
     <Content Include="Views\Danfe\_dados_adicionais.cshtml" />
     <Content Include="Views\Danfe\_dados_nfe.cshtml" />

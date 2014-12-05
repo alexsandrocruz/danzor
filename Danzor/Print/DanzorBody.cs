@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Danzor
+namespace Danzor.Print
 {
-    public class DanzorPage
+    public class DanzorBody
     {
         public int page { get; set; }
         public int size { get; set; }
@@ -21,7 +21,7 @@ namespace Danzor
         public dynamic cobr { get; set; }
         public dynamic protNFe { get; set; }
 
-        public DanzorPage(dynamic nfe, dynamic protNFe, int page, int size)
+        public DanzorBody(dynamic nfe, dynamic protNFe, int page, int size)
         {
             this.page = page;
             this.size = size;
