@@ -1,4 +1,9 @@
-﻿@page {
+﻿.A4-size {
+    width: 210mm;
+    height: 297mm;
+}
+
+@page {
     size: A4;
     margin: 0;
 }
@@ -13,25 +18,27 @@
     .page {
         box-shadow: 1px 1px 10px #808080;
         background-color: #fff;
+        margin: 0 auto;
         margin-top: 5mm;
         padding: 2mm;
-        height: 297mm;
-        width: 205mm;
+        .A4-size;
         display: block;
     }
 }
 
 @media print {
-    body{
+    body {
         background-color: #fff;
-        }
+    }
 
     .page {
         background-color: #fff;
+        width: 210mm;
         height: auto;
-        width: 205mm;
-        display: block;
         padding: 2mm;
+        margin-top: 0
+        ;
+        display: block;
         page-break-after: always;
     }
 

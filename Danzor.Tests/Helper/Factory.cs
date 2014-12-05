@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Danzor;
+using Danzor.Print;
 
 namespace Danzor.Tests.Helper
 {
@@ -14,7 +14,7 @@ namespace Danzor.Tests.Helper
         {
             get
             {
-                return new DanzorPrintViewer(GetFilePath()).Pages.First().nfe;
+                return new DanzorPrintViewer(GetFilePath()).Pages.First();
             }
         }
 

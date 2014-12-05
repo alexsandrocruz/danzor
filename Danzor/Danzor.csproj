@@ -39,7 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DanzorDeserializer.cs" />
+    <Compile Include="DanzorSerializer.cs" />
     <Compile Include="DanzorDynamicXml.cs" />
     <Compile Include="Print\DanzorBody.cs" />
     <Compile Include="Print\DanzorFooter.cs" />

@@ -13,15 +13,15 @@
       @foreach (var page in Model.Pages)
       {
          <div class="page">
-            @if (@page.IsFirstPage())
+            @if (@page.IsFirstPage)
             {
                @Html.Partial("~/Views/Danfe/_canhoto.cshtml", @page.Header)
             }
 
-            @Html.Partial("~/Views/Danfe/_dados_nfe.cshtml", @page.Body)
+            @*@Html.Partial("~/Views/Danfe/_dados_nfe.cshtml", @page.Body)
             @Html.Partial("~/Views/Danfe/_destinatario.cshtml", @page.Body)
 
-            @if (@page.IsFirstPage())
+            @if (@page.IsFirstPage)
             {
                @Html.Partial("~/Views/Danfe/_transportador.cshtml", @page.Body)
                @Html.Partial("~/Views/Danfe/_imposto.cshtml", @page.Body)
@@ -30,12 +30,11 @@
 
             @Html.Partial("~/Views/Danfe/_dados_produtos.cshtml", @page.Body)
 
-            @if (@page.IsLastPage())
+            @if (@page.IsLastPage)
             {
                @Html.Partial("~/Views/Danfe/_dados_adicionais.cshtml", @page.Footer)
-            }
+            }*@
          </div>
-         @*<div class="page-break"></div>*@
       }
    </div>
 </body>

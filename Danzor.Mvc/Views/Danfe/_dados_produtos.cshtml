@@ -116,7 +116,7 @@
             </td>
             <td class="campo sem-borda-superior-inferior">
                <div class="conteudo fonte-7-pontos">
-                  @if (item.imposto.IPI.IPITrib != null)
+                  @if (item.imposto.IPI.IPITrib.vIPI.Value == string.Empty)
                   {
                      @item.imposto.IPI.IPITrib.vIPI.Value
                   }
@@ -133,7 +133,7 @@
             </td>
             <td class="campo sem-borda-superior-inferior">
                <div class="conteudo fonte-7-pontos">
-                  @if (item.imposto.IPI.IPITrib != null)
+                  @if (item.imposto.IPI.IPITrib.pIPI.Value == string.Empty)
                   {
                      @item.imposto.IPI.IPITrib.pIPI.Value
                   }

@@ -10,6 +10,7 @@ namespace Danzor
     public class DanzorDynamicXml : DynamicObject
     {
         private XElement element;
+        private Dictionary<string, object> dictionary;
 
         public string Value
         {
@@ -30,16 +31,19 @@ namespace Danzor
         public DanzorDynamicXml()
         {
             this.element = null;
+            this.dictionary = dictionary ?? new Dictionary<string, object>();
         }
 
         public DanzorDynamicXml(string filename)
         {
             this.element = XElement.Load(filename);
+            this.dictionary = dictionary ?? new Dictionary<string, object>();
         }
 
         public DanzorDynamicXml(XElement element)
         {
             this.element = element;
+            this.dictionary = dictionary ?? new Dictionary<string, object>();
         }
 
 
@@ -63,7 +67,16 @@ namespace Danzor
 
         public override bool TryGetMember(GetMemberBinder binder, out object result)
         {
-            result = PrepareGetMembeResult(binder, GetElements(binder.Name));
+            if (dictionary.Keys.Contains(binder.Name))
+            {
+                result = dictionary[binder.Name];
+            }
+            else
+            {
+                var nodes = GetElements(binder.Name);
+                result = PrepareGetMembeResult(binder, nodes);
+                dictionary.Add(binder.Name, result);
+            }
             return true;
         }
 

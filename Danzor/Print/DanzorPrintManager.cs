@@ -11,13 +11,11 @@ namespace Danzor.Print
     {
         private dynamic nfe;
         private dynamic protNFe;
-        private DanzorDeserializer deserializer;
 
         public DanzorPrintManager(string path)
         {
-            this.deserializer = new DanzorDeserializer(path);
-            this.nfe = deserializer.nfe;
-            this.protNFe = deserializer.protNFe;
+            this.nfe = DanzorSerializer.GetExpandoFromXml(path);
+            this.protNFe = DanzorSerializer.DeserializerProtNFe(path);
         }
 
         public List<DanzorPage> GeneratePages()
@@ -27,8 +25,7 @@ namespace Danzor.Print
 
         private IEnumerable<DanzorPage> ApportionPages()
         {
-            var totalPages = 3;
-            //var totalPages = TotalPageSize();
+            var totalPages = TotalPageSize();
             for (int i = 1; i <= totalPages; i++)
                 yield return new DanzorPage(this.nfe, this.protNFe, i, totalPages);
         }
@@ -43,5 +40,7 @@ namespace Danzor.Print
         {
             return this.nfe.infNFe.det.Count / 10;
         }
+
+
     }
 }
