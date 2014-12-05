@@ -6,15 +6,16 @@
   body {
     display: flex;
     justify-content: center;
-    background-color: #808080;
+    background-color: #c3c3c3;
   }
   .page {
-    margin-top: 2mm;
+    box-shadow: 1px 1px 10px #808080;
     background-color: #fff;
+    margin-top: 5mm;
+    padding: 2mm;
     height: 297mm;
     width: 205mm;
     display: block;
-    padding: 2mm;
   }
 }
 @media print {
