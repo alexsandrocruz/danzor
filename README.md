@@ -21,7 +21,11 @@ public ActionResult Danfe()
 }
 ```
 
+
 ###Exemplo On-line
 Veja o funcionamento [aqui](http://danzor.azurewebsites.net/)
+
+###Como colaborar
+Abra uma Issue faça um fork do projeto. Quando concluir a alteração, abra um pull request!
 
 
