@@ -2,7 +2,7 @@ Danzor
 ======
 Gerador de DANFe para projetos MVC
 
-Danzor vai lhe auxiliar seu projeto ASP.NET MVC a gerar [DANFes](http://www.nfe.fazenda.gov.br/portal/perguntasFrequentes.aspx?tipoConteudo=Zn7vuWPGHL8=) de forma simples
+Danzor vai lhe auxiliar seu projeto ASP.NET MVC a gerar [DANFes](http://www.nfe.fazenda.gov.br/portal/perguntasFrequentes.aspx?tipoConteudo=Zn7vuWPGHL8=) de forma simples ([veja o exemplo](http://danzor.azurewebsites.net/))
 
 ###Instalação
 
